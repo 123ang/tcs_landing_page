@@ -73,7 +73,7 @@
                     </tr>
                 
             </table>
-            <div class="hidden-md-and-up GoldTable">
+            <div class="hidden-sm-and-down GoldTable">
 <br><br><br>         <br><br><br><br>
                 </div>
    
