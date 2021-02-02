@@ -1,385 +1,283 @@
 <template>
-  <div class="home">
-    <section>
-      <div>
-        <v-img src="../assets/background1.jpg">
-          <h1
-            class="company-name hidden-sm-and-down font_3"
-            style="font-size: 12px; color: white; margin-right: 500px"
-          >
-            Live Gold Price (per gram) :
-          </h1>
-          <div
-            class="iframeDiv"
-            style="font-size: 100px; color: white; margin-left: 300px; "
-          >
-            <iframe
-              class="iframe"
-              style="width: 70%;height:8%;background-color:orange;border:3px white solid;position: absolute;"
-              title="Table Master"
-              aria-label="Table Master"
-              scrolling="no"
-              src="https://wix-visual-data.appspot.com/app/widget?pageId=qlpgt&amp;compId=comp-k9i01vug&amp;viewerCompId=comp-k9i01vug&amp;siteRevision=226&amp;viewMode=site&amp;deviceType=desktop&amp;locale=en&amp;tz=Asia%2FKuala_Lumpur&amp;width=979&amp;height=77&amp;instance=o1iD_9tT0rHIXau_rRtcqrrXCE3-excvZgNa_PggWWg.eyJpbnN0YW5jZUlkIjoiMzVhZjQ0NjMtM2NmZi00ZWFkLWEzMWEtNjM2MjlkMTk0MDk3IiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJtZXRhU2l0ZUlkIjoiNWNiZGJkMmItYWQwMi00Mjc1LWFlMjEtMjdlNjdjYzA4MGJmIiwic2lnbkRhdGUiOiIyMDIxLTAyLTAxVDA1OjQyOjA1LjQzMVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImFmNWI1ZDE4LWNiOTEtNDNjYi05NzAxLTJiY2FmOGI4ZTZmOCIsImJpVG9rZW4iOiI2OTEyZjk0OC05MWZkLTBjZDgtMGQzYi00NDg0ZTFkOWMwMjgiLCJzaXRlT3duZXJJZCI6ImQ1NDg2MWZmLTIzMDEtNDA2Yi04MzY2LTgxZjVlOTQ5Yzk4OSJ9&amp;currency=MYR&amp;currentCurrency=MYR&amp;vsi=1ef378fc-8a81-439e-a6dd-3eba69981231&amp;commonConfig=%7B%22brand%22%3A%22wix%22%2C%22bsi%22%3A%2290224106-b24c-4bee-98f5-0014c712856d%7C1%22%2C%22BSI%22%3A%2290224106-b24c-4bee-98f5-0014c712856d%7C1%22%7D"
-              allowfullscreen=""
-              allowtransparency="true"
-              frameborder="0"
-              allow="autoplay;camera;microphone;geolocation;vr"
-            >
-            </iframe>
-          </div>
-          <h1
-            class="company-name hidden-sm-and-down font_3"
-            style="
-              font-size: 46px;
-              color: white;
-              font_family: NewsGothicBTW01-Italic;
-              font-weight: bold;
-            "
-          >
-            The most shiniest Diamond in the world
-          </h1>
-          <span class="hidden-md-and-up">
-            <br /><br /><br />
-            <h1 style="color: rgb(10, 29, 65)">ASTRACO GROUP OF COMPANIES</h1>
-          </span>
-        </v-img>
-      </div>
-    </section>
-    <section id="company-id">
-      <div>
-        <v-img height="300px" src="../assets/background2.jpg">
-          <v-card height="100%" color="rgb(0, 0, 0, 0.6)" align="center" justify="center">
-            <h4 class="company">
-              <br /><br />
-              <p class="company-p">ASTRACO FREIGHT FORWARDERS SDN. BHD. (143986-X)</p>
-              <p class="company-p">ASTRACO LOGISTICS SDN. BHD (489740-D)</p>
-              <p class="company-p">A.F.F SDN. BHD.</p>
-            </h4>
-            <br />
-            <h2 class="company">REVOLUTIONIZING LOGISTICS IN THE NEW</h2>
-            <br />
-            <v-btn
-              class="down-op-7"
-              color="grey darken-2"
-              fab
-              medium
-              dark
-              @click="$vuetify.goTo('#about-us')"
-            >
-              <v-icon
-                style="-webkit-animation: downarrow 0.6s infinite alternate ease-in-out"
-              >
-                mdi-arrow-down</v-icon
-              >
-            </v-btn>
-          </v-card>
-        </v-img>
-      </div>
-    </section>
-  </div>
+<div style="background-color:black">
+
+    <div class="container">
+        <v-parallax :height="$vuetify.breakpoint.smAndDown ? 680 : 600" src="../assets/jewel_bg.webp">
+            <span class="italic-word">Live Gold Price (per gram) : </span>
+            <table  class="hidden-sm-and-down GoldTable">
+                <thead>
+                    <tr>
+                        <th>Type of Gold</th>
+                        <th>24K</th>
+                        <th>22k</th>
+                        <th>21K</th>
+                        <th>18K</th>
+                        <th>14K</th>
+                        <th>Premium Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rate</td>
+                        <td>RM 290.00</td>
+                        <td>RM 275.00</td>
+                        <td>RM 255.00</td>
+                        <td>RM 185.00</td>
+                        <td>RM 140.00</td>
+                        <td>RM 295.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="hidden-md-and-up GoldTable" style="margin-top:400px">
+                <thead>
+                    <tr>
+                        <th>Type of Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rate</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="hidden-md-and-up GoldTable">
+               
+                
+                    <tr>
+                        <td>24K</td>
+                        <td class="phone-gold-price">RM 290.00</td>
+                    </tr>
+                     <tr>
+                        <td>22K</td>
+                        <td class="phone-gold-price">RM 279.00</td>
+                    </tr>
+                     <tr>
+                        <td>21K</td>
+                        <td class="phone-gold-price">RM 255.00</td>
+                    </tr>
+                     <tr>
+                        <td>18K</td>
+                        <td class="phone-gold-price">RM 225.00</td>
+                    </tr>
+                     <tr>
+                        <td>14K</td>
+                        <td class="phone-gold-price">RM 185.00</td>
+                    </tr>
+                     <tr>
+                        <td>10K</td>
+                        <td class="phone-gold-price">RM 140.00</td>
+                    </tr>
+                     <tr>
+                        <td>Premium Item</td>
+                        <td class="phone-gold-price">RM 295.00</td>
+                    </tr>
+                
+            </table>
+            <div class="hidden-md-and-up GoldTable">
+<br><br><br>         <br><br><br><br>
+                </div>
+   
+            <div class="diamond-word">
+                <span>The most shiniest Diamond in the world</span>
+                <br><br><br>
+            </div>
+            <div class="exclusive-word">
+                <h2>The only 91 Facets Diamond Cut in Malaysia</h2>
+
+                <h2>Excluseively available at TCS Signature</h2>
+            </div>
+            <br><br><br>
+        </v-parallax>
+    </div>
+    <br><br>
+    <v-container>
+        <v-row wrap>
+            <v-flex xs12 sm4 md4 p-4>
+                <v-card align="center" justify="center" max-width=300 class="card">
+                    <v-img contain src="../assets/HariRayaPromo.webp"> </v-img>
+                </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 md4 p-4>
+                <v-card align="center" justify="center" max-width=300 class="card">
+                    <v-img contain src="../assets/Gold_08.webp"> </v-img>
+                </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 md4 p-4>
+                <v-card align="center" justify="center" max-width=300 class="card">
+                    <v-img contain src="../assets/ring_17_2.webp"> </v-img>
+                </v-card>
+            </v-flex>
+        </v-row>
+    </v-container>
+    <br><br><br>
+
+    <v-img :height="$vuetify.breakpoint.smAndDown ? 1000 : 800" src="../assets/bling.jpg">
+        <v-container>
+            <div class="diamond-word">
+                <br><br>
+                <span style="color:black">About TCS</span>
+                <br><br>
+
+            </div>
+
+            <div class="margin-20">
+                <p class="black-color-words">
+                    At TCS, we’re dedicated to bring you the crème de la crème of modern day jewelries. </p>
+               <p class="black-color-words"> As the exclusive sole distributor of one of the world’s most renowned brand, Perten; </p>
+                 <p class="black-color-words">  we take pride in introducing the shiniest diamond in the world,
+                    the first and </p>
+                     <p class="black-color-words">only 
+              diamond with 71 facets cut diamond that features a perfect 10 Hearts & 10 Arrows. </p>
+
+                <br><br>
+
+                <p class="black-color-words" >This jewelry marvel was made possible with a trademarked cutting edge technologies </p>
+                <p class="black-color-words" > and excellent craftsmanship. As a mark of excellence, each of the </p>
+
+                <p class="black-color-words" >diamonds are engraved with a unique serial code and is </p>
+                <p class="black-color-words" > GemEx Certified for its Brilliance, Fire and Sparkle,</p>
+                <p class="black-color-words" >Only 0.02% of these handpicked diamond by experts make the final cut.</p>
+                <v-img src="../assets/aboutus-2.png" height="200px" width="200px" style="margin-left:700px;
+                 padding-top:200px;
+                 top: -115px;
+                 left: -40px; 
+                 margin-bottom: -140px;"></v-img>
+
+            </div>
+
+            <div style="text-align:center; margin-bottom:500px">
+                <v-btn class="btn" rounded large style="background-color: black; color: #ffd600; border-color:#ffd600;"> Details >> </v-btn>
+            </div>
+        </v-container>
+    </v-img>
+
+</div>
 </template>
 
 <script>
-import { mdiMenuDown, mdiArrowUp } from "@mdi/js";
-
 export default {
-  name: "Home",
-  data: () => ({
-    icons: {
-      mdiMenuDown,
-      mdiArrowUp,
+
+    name: "Home",
+    data() {
+        return {
+
+        }
     },
-    fab: false,
-  }),
-  methods: {
-    onScroll(e) {
-      if (typeof window === "undefined") return;
-      const top = window.pageYOffset || e.target.scrollTop || 0;
-      this.fab = top > 20;
+    methods: {
+
     },
-    toTop() {
-      this.$vuetify.goTo(0);
+
+    computed: {
+
     },
-  },
-  created() {},
+    created() {
+
+    }
+
 };
 </script>
 
 <style>
-.scroll-top-btn {
-  height: 60px !important;
-  width: 50px !important;
-  opacity: 0.5;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 60px;
-  width: 60px;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+.italic-word {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#myBtn:hover {
-  background-color: #07204c;
-}
-.foot-text {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 0.9rem;
-  font-style: normal;
-  line-height: 1.6;
-  word-break: break-word;
-  font-weight: 300;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#route {
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
+.black-color-words {
+    color: black;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    text-align: justify;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
+.GoldTable {
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+    border-top-width: 0px;
 
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black !important;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: small;
+    border-color: #FFFFFF;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top-style: solid;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.GoldTable>table,
+th,
+td {
+    border: 1px solid white;
+    text-align: center;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.GoldTable>thead {
+    font: normal normal normal proxima-n-w01-reg, sans-serif;
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.flip-card-back a {
-  color: #07204c;
-  text-decoration: none;
+.GoldTable>thead>tr>th {
+    color: #FFFFFF;
+    background-color: #000000;
+    background-image: none;
+    vertical-align: top;
 }
-.flip-card-back a:visited {
-  color: black;
-}
-.send-form-btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0.4rem 0;
-  position: relative;
-  border-radius: 0;
-  background: none;
-  border-color: white;
-  color: #ffffff;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 1px;
-  white-space: normal;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  word-break: break-word;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 0.9rem;
-  -webkit-appearance: none;
-  line-height: 1;
-  border: 2px solid;
-  padding: 20px 40px;
-}
-.lbl {
-  color: #ffffff;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1.1rem;
-  display: inline-block;
-  touch-action: manipulation;
-}
-.office-title {
-  color: #07204c;
-  font-weight: 500;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1.1rem;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-.log-company {
-  color: #767676;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1.1rem;
-  font-style: normal;
-  line-height: 1.6;
-}
-.map-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mapouter {
-  position: relative;
-  text-align: center;
-  height: 500px;
-  width: 700px;
-}
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 500px;
-  width: 700px;
-}
-.work-black {
-  color: black;
-}
-.work-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.work-title {
-  font-family: "Ubuntu Condensed", sans-serif;
-  font-size: 2.2rem;
-}
-.work-p {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1rem;
-}
-.work-text {
-  color: white;
-  text-align: left;
-}
-.flip-card {
-  width: 300px;
-  height: 300px;
-  text-align: center;
+.phone-gold-price {
+    color: #000000;
+    background-color: #FFCB05;
+   
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.GoldTable>tbody>tr {
+    color: #000000;
+    background-color: #FFCB05;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+.diamond-word {
+    text-align: center;
+    font-size: 46px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: rgb(0 0 0 / 40%) 0px 4px 5px;
+    line-height: normal;
+    letter-spacing: normal;
+    overflow-wrap: break-word;
+    font-family: didot-w01-italic, serif;
+    font-style: italic;
 }
 
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
+.exclusive-word {
+    text-align: center;
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: rgb(0 0 0 / 40%) 0px 4px 5px;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    overflow-wrap: break-word;
 }
-
-/* Style the back side */
-.flip-card-back {
-  background-color: white;
-  color: #07204c;
-  transform: rotateY(180deg);
-  padding: 5rem;
-  font-size: 10px;
+@media only screen and (min-width: 1300px) {
+.margin-20{
+  margin-left:20%
 }
-.work {
-  background: #07204c;
-  color: white;
-  text-align: center;
-  font-family: "Ubuntu Condensed", sans-serif;
-  font-size: 1.5rem;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-.service-title {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1rem;
-  margin: 0;
-  padding: 2rem 2rem 0 2rem;
-}
-.service-text {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 0.9rem;
-  padding-bottom: 2rem;
-  color: white;
-}
-.about-title {
-  font-family: "Ubuntu Condensed", sans-serif;
-  font-size: 2.8rem;
-}
-.about-p {
-  color: #767676;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1.1rem;
-}
-.down-op-7 {
-  opacity: 0.7;
-}
-.company-name {
-  text-align: center;
-  margin-top: 15%;
-  font-size: calc(60px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-.company {
-  text-align: center;
-  color: white;
-}
-.company-p {
-  line-height: 1;
-}
-
-.service-img {
-  padding: 1rem 20rem 5rem 5rem;
-  background: #07204c;
-  margin-top: 1rem;
-  height: 20%;
-}
-.other-service-img {
-  padding: 2rem 12rem 5rem 4rem;
-  margin-top: 1rem;
-  height: 20%;
-}
-
-@-webkit-keyframes downarrow {
-  0% {
-    -webkit-transform: translateY(0);
-    opacity: 0.8;
-  }
-  100% {
-    -webkit-transform: translateY(0.1em);
-    opacity: 0.9;
-  }
 }
 </style>
