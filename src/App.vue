@@ -4,7 +4,6 @@
        <div style="height: 100%;">
       <router-view />
       </div>
-      <Subscrip/>
      <Footer/>
      
   </v-app>
@@ -12,13 +11,13 @@
 <script>
 import Navbar from '@/views/Navbar'
 import Footer from '@/views/Footer'
-import Subscrip from '@/views/Subscrip'
+
 export default {
   name: 'App',
   components: {
       Navbar,
-      Footer,
-      Subscrip
+      Footer
+      
   },
   data: () => ({
    

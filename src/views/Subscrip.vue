@@ -1,6 +1,6 @@
 <template>
     <div style="margin-top: -1.5em;" >
-        <v-img  contain class="center" src="../assets/subscrip.webp"> 
+        <v-img  contain class="text-align:center" src="../assets/subscrip.webp"> 
             <h1 style="color:white;font-style:italic;margin-bottom: 1.67em;margin-top: 1.67em;">Subscribe to get updates</h1>
                 <div >
                      <input type="text" style="margin-left:10px" placeholder="Your name..">

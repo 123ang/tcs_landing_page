@@ -150,14 +150,25 @@
             </div>
         </v-container>
     </v-img>
-
+    <subscrip/>
+    <event/>
 </div>
+   
 </template>
 
 <script>
+
+import Subscrip from '@/views/Subscrip'
+import event from '@/views/event';
+
 export default {
 
     name: "Home",
+    components: {
+      Subscrip,
+        event
+        
+  },
     data() {
         return {
 
