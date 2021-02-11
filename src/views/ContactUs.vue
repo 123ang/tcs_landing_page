@@ -5,8 +5,8 @@
     </div>
 
     <v-row style="background-color:black">
-        <v-col>
-            <v-container id="tcs-detail">
+        <v-col md="6" xs="12" sm="12">
+            <div class="container" id="tcs-detail">
                 <p class="line-height-10 gold-words"> <b>TCS JEWELLERY (TCS SIGNATURE SDN BHD)</b></p>
                 <p class="line-height-10 gold-words"> <b>(1229137-D)</b></p>
                 <br>
@@ -14,7 +14,7 @@
                 <p class="line-height-10">Jalan USJ 25/1A, 47650 Subang Jaya, Selangor</p>
                 <p class="line-height-10">Malaysia</p>
                 <br>
-                <p>Telephone: +60 11 6548 1718</p>
+                <p class="line-height-10">Telephone: +60 11 6548 1718</p>
                 <br>
                 <p class="line-height-10">Email:
                     <span style="text-decoration:underline">
@@ -23,9 +23,25 @@
                         </a>
                     </span>
                 </p>
-            </v-container>
+                <br>
+                <v-row>
+                    <div style="grid-area: 1 / 1 / 2 / 2;">
+                        <a href="https://www.facebook.com/tcsjewellery/" target="_blank">
+                            <v-img contain src="../assets/fb logo.webp" height="29px" width="29px"> </v-img>
+                        </a>
+                    </div>
+                    <div style="grid-area: 1 / 2 / 2 / 3; margin-left:15px">
+                        <a href="https://www.instagram.com/tcsjewellery/" target="_blank">
+                            <v-img contain src="../assets/instagram logo.webp" height="29px" width="29px">
+                            </v-img>
+                        </a>
+
+                    </div>
+
+                </v-row>
+            </div>
         </v-col>
-        <v-col>
+        <v-col md="6" xs="12" sm="12">
             <v-container>
 
                 <form action="https://formsubmit.co/marketing@tcsjewellery.com.my" method="POST">
@@ -136,17 +152,14 @@ export default {
 
 #tcs-detail {
     position: relative;
-    margin: 60px 0px 26px calc((100% - 490px) * 0.5);
     left: 72px;
-    grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
     align-self: start;
     overflow-wrap: break-word;
     text-align: start;
-    pointer-events: none;
     background-color: rgb(0, 0, 0);
     color: white;
-    line-height: 21.6px;
+    line-height: 15px;
 }
 
 .line-height-10 {
@@ -162,5 +175,25 @@ export default {
         line-height: 20px;
         font-size: 14px;
     }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #tcs-detail {
+        position: relative;
+        justify-self: start;
+        align-self: start;
+        overflow-wrap: break-word;
+        text-align: start;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        line-height: 18px;
+    }
+
+    .line-height-10 {
+        line-height: 15px;
+        font-size: 10px;
+    }
+
 }
 </style>
