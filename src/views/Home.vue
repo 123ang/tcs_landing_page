@@ -149,31 +149,28 @@
                 <v-btn class="btn" rounded large style="background-color: black; color: #ffd600; border-color:#ffd600;"> Details >> </v-btn>
             </div>
         </v-container>
+              <Subscrip/>
     </v-img>
 
 </div>
 </template>
 
 <script>
+
+import Subscrip from '@/views/Subscrip'
 export default {
+  name: 'Home',
+  components: {
 
-    name: "Home",
-    data() {
-        return {
+      Subscrip
+  },
+  data: () => ({
+   
+  }),
 
-        }
-    },
-    methods: {
-
-    },
-
-    computed: {
-
-    },
-    created() {
-
-    }
-
+  methods: {
+   
+  },
 };
 </script>
 
@@ -208,8 +205,8 @@ export default {
 .GoldTable>table,
 th,
 td {
-    border: 1px solid white;
-    text-align: center;
+    border: 1px solid white !important;
+    text-align: center !important;
 }
 
 .GoldTable>thead {

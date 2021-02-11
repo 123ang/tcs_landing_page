@@ -4,7 +4,7 @@
        <div style="height: 100%;">
       <router-view />
       </div>
-      <Subscrip/>
+
      <Footer/>
      
   </v-app>
