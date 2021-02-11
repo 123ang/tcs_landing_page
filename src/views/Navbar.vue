@@ -14,14 +14,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">ABOUT TCS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">OUR COLLECTIONS</a>
+                    <li class="nav-item" :class="{active:collectionActive}" @click="collection_active">
+                        <a class="nav-link" href="/our-collections">OUR COLLECTIONS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EVENTS SHARING</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact" :class="{active:contactActive}" @click="contact_active">CONTACT US</a>
+                    <li class="nav-item" :class="{active:contactActive}" @click="contact_active">
+                        <a class="nav-link" href="/contact-us" >CONTACT US</a>
                     </li>
                 </ul>
 
@@ -50,13 +50,13 @@
                         <a class="nav-link" href="/about">ABOUT TCS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">OUR COLLECTIONS</a>
+                        <a class="nav-link" href="/our-collections">OUR COLLECTIONS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EVENTS SHARING</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">CONTACT US</a>
+                        <a class="nav-link" href="/contact-us">CONTACT US</a>
                     </li>
                 </ul>
                 <div style="margin-left:10px">
@@ -87,7 +87,7 @@ export default {
             drawer: false,
             homeActive: true,
             contactActive: false,
-
+            collectionActive: false,
         };
     },
 
@@ -95,20 +95,28 @@ export default {
         home_active() {
             this.homeActive = true
             this.contactActive = false
-
+            this.collectionActive = false
         },
         contact_active() {
             this.homeActive = false
             this.contactActive = true
-
+            this.collectionActive = false
+        },
+        collection_active() {
+            this.homeActive = false
+            this.contactActive = false
+            this.collectionActive = true
         }
     },
     created() {
-        if (this.$router.currentRoute.path == "/contact") {
+        if (this.$router.currentRoute.path == "/contact-us") {
             this.contact_active()
         }
         if (this.$router.currentRoute.path == "/") {
             this.home_active()
+        }
+        if (this.$router.currentRoute.path == "/our-collections") {
+            this.collection_active()
         }
 
     },

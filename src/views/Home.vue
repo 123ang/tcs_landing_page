@@ -207,7 +207,7 @@ export default {
 .GoldTable>table,
 th,
 td {
-    border: 1px solid white !important;
+    border: 1px solid white ;
     text-align: center !important;
 }
 
