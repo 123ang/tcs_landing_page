@@ -10,6 +10,21 @@
                                     font-size:5vw;
                                     font-style:italic;
                                     ">Events Sharing</p>
+                <div>
+                        <div class="even1 contain">                      
+                        </div>
+                </div>
             </v-img>
+            
     </div>
 </template>
+
+<style>
+    .even1 {
+        background-image: url('../assets/even1.webp');
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+          
+}
+</style>
