@@ -3,7 +3,7 @@
 
     <div class="container">
         <v-parallax :height="$vuetify.breakpoint.smAndDown ? 680 : 600" src="../assets/jewel_bg.webp">
-            <span class="italic-word">Live Gold Price (per gram) : </span>
+            <span class="italic-word" style="margin-top:15px">Live Gold Price (per gram) : </span>
             <table  class="hidden-sm-and-down GoldTable">
                 <thead>
                     <tr>

@@ -1,91 +1,66 @@
 <template>
-  <div class="even1">
-    <span
-      style="font-family: didot-w01-italic, serif; top: 10%; position: relative"
-      >Events Sharing</span
-    >
+<div class="even1">
+    <br>
+    <span style="font-family: didot-w01-italic, serif; position: relative">Events Sharing</span>
+    <br><br>
+    <v-container>
+        <v-row wrap>
+            <v-flex xs12 sm4 md4 p-4>
+                <v-card align="center" justify="center" max-width=300 height=300 style="background: white;">
+                    <div>
 
-    <div class="picFram container">
-      <div>
-        <table class="my-table">
-          <tr>
-            <td>
-              <div class="polaroid">
-                <img src="../assets/even1.webp" />
-                <div class="container">
-                  <p style="background: white; font-size: 20px">Cinque Terre</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="polaroid">
-                <img src="../assets/even1.webp" />
-                <div class="container">
-                  <p style="background: white; font-size: 20px">Cinque Terre</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="polaroid">
-                <img src="../assets/even1.webp" />
-                <div class="container">
-                  <p style="background: white; font-size: 20px">Cinque Terre</p>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
+                        <v-img class="other-service-img" max-height=230 contain src="../assets/greenpau1.webp"> </v-img>
+                    </div>
+                    <div style="margin-top:10px">
+                        <p style="font-size:20px;color:black;"> Don't miss out this opportunity to enjoy exclusive deal </p>
+
+                    </div>
+                </v-card>
+
+            </v-flex>
+            <v-flex xs12 sm4 md4 p-4>
+                <v-card align="center" justify="center" max-width=300 height=300 style="background: white;">
+                    <div>
+
+                        <v-img class="other-service-img" max-height=230 contain src="../assets/greenpau2.webp"> </v-img>
+                    </div>
+                    <div style="margin-top:10px">
+                        <p style="font-size:20px;color:black;"> Sampul Raya Eksklusif </p>
+
+                    </div>
+                </v-card>
+
+            </v-flex>
+            <v-flex xs12 sm4 md4 p-4>
+                <v-card align="center" justify="center" max-width=300 height=300 style="background: white;">
+                    <div>
+
+                        <v-img class="other-service-img" max-height=230 contain src="../assets/diamonds.webp"> </v-img>
+                    </div>
+                    <div style="margin-top:10px">
+                        <p style="font-size:20px;color:black;"> 99 Famous Diamond in the World </p>
+
+                    </div>
+                </v-card>
+
+            </v-flex>
+        </v-row>
+    </v-container>
+    <div style="text-align:center;">
+                <v-btn class="btn" rounded large style="background-color: black; color: #ffd600; border-color:#ffd600;"> More >> </v-btn>
+            </div>
+</div>
 </template>
 
 <style>
-
-td {
-    border: 1px solid #000;
-}
-
-tr td:last-child {
-    width: 1%;
-    white-space: nowrap;
-}
-
-img {
-  width: 250px;
-  height: 250px;
-}
-div.container {
-  text-align: center;
-  padding: 10px 20px;
-}
-div.polaroid {
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.my-table {
-  table-layout: auto !important;
-  width: auto;
-}
-.picFram {
-  position: relative;
-  top: 10%;
-  margin: auto;
-  width: 100%;
-  padding: 10px;
-}
 .even1 {
-  position: relative;
-  background-image: url("../assets/event.webp");
-  width: auto;
-  height: 100%;
-  max-height: 900px;
-  height: 800px;
-  text-align: center;
-  font-size: 50pt;
-  background-size: 100% 100%;
+    position: relative;
+    background-image: url("../assets/event.webp");
+    width: auto;
+    height: 100%;
+
+    text-align: center;
+    font-size: 50pt;
+    background-size: 100% 100%;
 }
 </style>
