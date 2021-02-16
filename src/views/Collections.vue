@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="background-color:black">
     <div class="page-title">
         <h1 style="padding-top:16px;font-weight: 600 !important">{{ collection_title }}</h1>
     </div>

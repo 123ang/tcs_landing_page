@@ -25,11 +25,29 @@
                     </li>
                 </ul>
 
-                <v-btn class="btn" rounded small style="background-color: black; color: #ffd600; border-color:#ffd600;margin-left:10px" href="http://member.tcsjewellery.com.my/Login_m.aspx" target="_blank">MEMBER</v-btn>
+                <v-btn class="btn" rounded small style="background-color: black;
+                    color: #ffd600; border-color:
+                    #ffd600;
+                    margin-left:10px;
+                    border-radius: 28px;
+                    padding-top:5px;   
+                    border: 1px solid" href="http://member.tcsjewellery.com.my/Login_m.aspx" target="_blank">MEMBER</v-btn>
 
-                <v-btn class="btn" rounded small style="background-color: black; color: #ffd600; border-color:#ffd600;margin-left:10px" href="https://www.tcsjewellery.com.my/copy-of-contact-us" target="_blank">REGISTER</v-btn>
+                <v-btn class="btn" rounded small style="background-color: black;
+                    color: #ffd600; border-color:
+                    #ffd600;
+                    margin-left:10px;
+                    border-radius: 28px;
+                    padding-top:5px;  
+                    border: 1px solid" href="https://www.tcsjewellery.com.my/copy-of-contact-us" target="_blank">REGISTER</v-btn>
 
-                <v-btn class="btn" rounded small style="background-color: black; color: #ffd600; border-color:#ffd600;margin-left:10px" href="https://tcs-ecommerce.starbartersbond.com/" target="_blank">ESHOP</v-btn>
+                <v-btn class="btn" rounded small style="background-color: black;
+                    color: #ffd600; border-color:
+                    #ffd600;
+                    margin-left:10px;
+                    border-radius: 28px;
+                    padding-top:5px;    
+                    border: 1px solid" href="https://tcs-ecommerce.starbartersbond.com/" target="_blank">ESHOP</v-btn>
             </v-row>
         </div>
     </nav>
@@ -62,14 +80,32 @@
                 <div style="margin-left:10px">
                     <p>
 
-                        <v-btn class="btn" rounded style="background-color: black; color: #ffd600; border-color:#ffd600; margin-left:10px" href="http://member.tcsjewellery.com.my/Login_m.aspx" target="_blank">MEMBER</v-btn>
+                        <v-btn class="btn" rounded style="background-color: black;
+                            color: #ffd600; border-color:
+                            #ffd600;
+                            margin-left:10px;
+                            border-radius: 28px;
+                            padding-top:5px;    
+                            border: 1px solid" href="http://member.tcsjewellery.com.my/Login_m.aspx" target="_blank">MEMBER</v-btn>
                     </p>
                     <p>
-                        <v-btn class="btn" rounded style="background-color: black; color: #ffd600; border-color:#ffd600; margin-left:10px" href="https://www.tcsjewellery.com.my/copy-of-contact-us" target="_blank">REGISTER</v-btn>
+                        <v-btn class="btn" rounded style="background-color: black;
+                            color: #ffd600; border-color:
+                            #ffd600;
+                            margin-left:10px;
+                            border-radius: 28px;
+                            padding-top:5px;    
+                            border: 1px solid" href="https://www.tcsjewellery.com.my/copy-of-contact-us" target="_blank">REGISTER</v-btn>
                     </p>
                     <p>
 
-                        <v-btn class="btn" rounded style="background-color: black; color: #ffd600; border-color:#ffd600; margin-left:10px" href="https://tcs-ecommerce.starbartersbond.com/" target="_blank">ESHOP</v-btn>
+                        <v-btn class="btn" rounded style="background-color: black;
+                            color: #ffd600; border-color:
+                            #ffd600;
+                            margin-left:10px;
+                            border-radius: 28px;
+                            padding-top:5px;    
+                            border: 1px solid" href="https://tcs-ecommerce.starbartersbond.com/" target="_blank">ESHOP</v-btn>
                     </p>
                 </div>
             </v-list>

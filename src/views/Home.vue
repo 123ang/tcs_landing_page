@@ -4,7 +4,7 @@
     <div class="container">
         <v-parallax :height="$vuetify.breakpoint.smAndDown ? 680 : 600" src="../assets/jewel_bg.webp">
             <span class="italic-word" style="margin-top:15px">Live Gold Price (per gram) : </span>
-            <table  class="hidden-sm-and-down GoldTable">
+            <table class="hidden-sm-and-down GoldTable">
                 <thead>
                     <tr>
                         <th>Type of Gold</th>
@@ -41,42 +41,41 @@
                 </tbody>
             </table>
             <table class="hidden-md-and-up GoldTable">
-               
-                
-                    <tr>
-                        <td>24K</td>
-                        <td class="phone-gold-price">RM 290.00</td>
-                    </tr>
-                     <tr>
-                        <td>22K</td>
-                        <td class="phone-gold-price">RM 279.00</td>
-                    </tr>
-                     <tr>
-                        <td>21K</td>
-                        <td class="phone-gold-price">RM 255.00</td>
-                    </tr>
-                     <tr>
-                        <td>18K</td>
-                        <td class="phone-gold-price">RM 225.00</td>
-                    </tr>
-                     <tr>
-                        <td>14K</td>
-                        <td class="phone-gold-price">RM 185.00</td>
-                    </tr>
-                     <tr>
-                        <td>10K</td>
-                        <td class="phone-gold-price">RM 140.00</td>
-                    </tr>
-                     <tr>
-                        <td>Premium Item</td>
-                        <td class="phone-gold-price">RM 295.00</td>
-                    </tr>
-                
+
+                <tr>
+                    <td>24K</td>
+                    <td class="phone-gold-price">RM 290.00</td>
+                </tr>
+                <tr>
+                    <td>22K</td>
+                    <td class="phone-gold-price">RM 279.00</td>
+                </tr>
+                <tr>
+                    <td>21K</td>
+                    <td class="phone-gold-price">RM 255.00</td>
+                </tr>
+                <tr>
+                    <td>18K</td>
+                    <td class="phone-gold-price">RM 225.00</td>
+                </tr>
+                <tr>
+                    <td>14K</td>
+                    <td class="phone-gold-price">RM 185.00</td>
+                </tr>
+                <tr>
+                    <td>10K</td>
+                    <td class="phone-gold-price">RM 140.00</td>
+                </tr>
+                <tr>
+                    <td>Premium Item</td>
+                    <td class="phone-gold-price">RM 295.00</td>
+                </tr>
+
             </table>
             <div class="hidden-sm-and-down GoldTable">
-<br><br><br>         <br><br><br><br>
-                </div>
-   
+                <br><br><br> <br><br><br><br>
+            </div>
+
             <div class="diamond-word">
                 <span>The most shiniest Diamond in the world</span>
                 <br><br><br>
@@ -123,20 +122,20 @@
             <div class="margin-20">
                 <p class="black-color-words">
                     At TCS, we’re dedicated to bring you the crème de la crème of modern day jewelries. </p>
-               <p class="black-color-words"> As the exclusive sole distributor of one of the world’s most renowned brand, Perten; </p>
-                 <p class="black-color-words">  we take pride in introducing the shiniest diamond in the world,
+                <p class="black-color-words"> As the exclusive sole distributor of one of the world’s most renowned brand, Perten; </p>
+                <p class="black-color-words"> we take pride in introducing the shiniest diamond in the world,
                     the first and </p>
-                     <p class="black-color-words">only 
-              diamond with 71 facets cut diamond that features a perfect 10 Hearts & 10 Arrows. </p>
+                <p class="black-color-words">only
+                    diamond with 71 facets cut diamond that features a perfect 10 Hearts & 10 Arrows. </p>
 
                 <br><br>
 
-                <p class="black-color-words" >This jewelry marvel was made possible with a trademarked cutting edge technologies </p>
-                <p class="black-color-words" > and excellent craftsmanship. As a mark of excellence, each of the </p>
+                <p class="black-color-words">This jewelry marvel was made possible with a trademarked cutting edge technologies </p>
+                <p class="black-color-words"> and excellent craftsmanship. As a mark of excellence, each of the </p>
 
-                <p class="black-color-words" >diamonds are engraved with a unique serial code and is </p>
-                <p class="black-color-words" > GemEx Certified for its Brilliance, Fire and Sparkle,</p>
-                <p class="black-color-words" >Only 0.02% of these handpicked diamond by experts make the final cut.</p>
+                <p class="black-color-words">diamonds are engraved with a unique serial code and is </p>
+                <p class="black-color-words"> GemEx Certified for its Brilliance, Fire and Sparkle,</p>
+                <p class="black-color-words">Only 0.02% of these handpicked diamond by experts make the final cut.</p>
                 <v-img src="../assets/aboutus-2.png" height="200px" width="200px" style="margin-left:700px;
                  padding-top:200px;
                  top: -115px;
@@ -146,20 +145,18 @@
             </div>
 
             <div style="text-align:center; margin-bottom:500px">
- <a href="/about">
-                <v-btn class="btn" rounded large style="background-color: black; color: #ffd600; border-color:#ffd600;"> Details >> </v-btn>
-</a>
+                <a href="/about">
+                    <v-btn class="btn" rounded large style="background-color: black; color: #ffd600; border-color:#ffd600;"> Details >> </v-btn>
+                </a>
             </div>
         </v-container>
     </v-img>
-    <subscrip/>
-    <event/>
+    <subscrip />
+    <event />
 </div>
-   
 </template>
 
 <script>
-
 import Subscrip from '@/views/Subscrip'
 import event from '@/views/event';
 
@@ -167,10 +164,10 @@ export default {
 
     name: "Home",
     components: {
-      Subscrip,
+        Subscrip,
         event
-        
-  },
+
+    },
     data() {
         return {
 
@@ -239,10 +236,11 @@ td {
     background-image: none;
     vertical-align: top;
 }
+
 .phone-gold-price {
     color: #000000;
     background-color: #FFCB05;
-   
+
 }
 
 .GoldTable>tbody>tr {
@@ -288,9 +286,10 @@ td {
     letter-spacing: 0.1em;
     overflow-wrap: break-word;
 }
+
 @media only screen and (min-width: 1300px) {
-.margin-20{
-  margin-left:20%
-}
+    .margin-20 {
+        margin-left: 20%
+    }
 }
 </style>
