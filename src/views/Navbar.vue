@@ -11,8 +11,8 @@
                     <li class="nav-item" :class="{active:homeActive}" @click="home_active">
                         <a class="nav-link" href="/">HOME</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT TCS</a>
+                    <li class="nav-item" :class="{active:aboutActive}" @click="about_active">
+                        <a class="nav-link" href="/about">ABOUT TCS</a>
                     </li>
                     <li class="nav-item" :class="{active:collectionActive}" @click="collection_active">
                         <a class="nav-link" href="/our-collections">OUR COLLECTIONS</a>
@@ -21,7 +21,7 @@
                         <a class="nav-link" href="#">EVENTS SHARING</a>
                     </li>
                     <li class="nav-item" :class="{active:contactActive}" @click="contact_active">
-                        <a class="nav-link" href="/contact-us" >CONTACT US</a>
+                        <a class="nav-link" href="/contact-us">CONTACT US</a>
                     </li>
                 </ul>
 
@@ -29,7 +29,7 @@
 
                 <v-btn class="btn" rounded small style="background-color: black; color: #ffd600; border-color:#ffd600;margin-left:10px" href="https://www.tcsjewellery.com.my/copy-of-contact-us" target="_blank">REGISTER</v-btn>
 
-                <v-btn class="btn" rounded small style="background-color: black; color: #ffd600; border-color:#ffd600;margin-left:10px" href="http://eshop.tcsjewellery.com.my/" target="_blank">ESHOP</v-btn>
+                <v-btn class="btn" rounded small style="background-color: black; color: #ffd600; border-color:#ffd600;margin-left:10px" href="https://tcs-ecommerce.starbartersbond.com/" target="_blank">ESHOP</v-btn>
             </v-row>
         </div>
     </nav>
@@ -69,7 +69,7 @@
                     </p>
                     <p>
 
-                        <v-btn class="btn" rounded style="background-color: black; color: #ffd600; border-color:#ffd600; margin-left:10px" href="http://eshop.tcsjewellery.com.my/" target="_blank">ESHOP</v-btn>
+                        <v-btn class="btn" rounded style="background-color: black; color: #ffd600; border-color:#ffd600; margin-left:10px" href="https://tcs-ecommerce.starbartersbond.com/" target="_blank">ESHOP</v-btn>
                     </p>
                 </div>
             </v-list>
@@ -88,6 +88,7 @@ export default {
             homeActive: true,
             contactActive: false,
             collectionActive: false,
+            aboutActive: false,
         };
     },
 
@@ -96,16 +97,25 @@ export default {
             this.homeActive = true
             this.contactActive = false
             this.collectionActive = false
+            this.aboutActive = false
         },
         contact_active() {
             this.homeActive = false
             this.contactActive = true
             this.collectionActive = false
+            this.aboutActive = false
         },
         collection_active() {
             this.homeActive = false
             this.contactActive = false
             this.collectionActive = true
+            this.aboutActive = false
+        },
+        about_active() {
+            this.homeActive = false
+            this.contactActive = false
+            this.collectionActive = false
+            this.aboutActive = true
         }
     },
     created() {
@@ -118,6 +128,10 @@ export default {
         if (this.$router.currentRoute.path == "/our-collections") {
             this.collection_active()
         }
+        if (this.$router.currentRoute.path == "/about") {
+            this.about_active()
+        }
+        console.log(this.$router.currentRoute.path)
 
     },
     computed: {

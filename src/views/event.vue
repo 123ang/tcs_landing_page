@@ -3,7 +3,7 @@
     <br>
     <span style="font-family: didot-w01-italic, serif; position: relative">Events Sharing</span>
     <br><br>
-    <v-container>
+    <v-container style="max-width:1000px">
         <v-row wrap>
             <v-flex xs12 sm4 md4 p-4>
                 <v-card align="center" justify="center" max-width=300 height=300 style="background: white;">

@@ -90,7 +90,7 @@
         </v-parallax>
     </div>
     <br><br>
-    <v-container>
+    <v-container style="max-width:1000px">
         <v-row wrap>
             <v-flex xs12 sm4 md4 p-4>
                 <v-card align="center" justify="center" max-width=300 class="card">
@@ -146,7 +146,9 @@
             </div>
 
             <div style="text-align:center; margin-bottom:500px">
+ <a href="/about">
                 <v-btn class="btn" rounded large style="background-color: black; color: #ffd600; border-color:#ffd600;"> Details >> </v-btn>
+</a>
             </div>
         </v-container>
     </v-img>
@@ -219,11 +221,12 @@ export default {
 .GoldTable>table,
 th,
 td {
-    text-align: center;
+    border: 1px solid white !important;
+    text-align: center !important;
 }
 
 .GoldTable>thead {
-    font: normal normal normal proxima-n-w01-reg, sans-serif;
+    font: normal normal normal sans-serif;
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
