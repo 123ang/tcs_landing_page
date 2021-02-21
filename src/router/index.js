@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import ContactUs from '../views/ContactUs.vue'
 import Collections from '../views/Collections.vue'
+import Allevent from '../views/Allevent.vue'
 Vue.use(VueRouter)
 
   const routes = [
@@ -27,6 +28,12 @@ Vue.use(VueRouter)
     name: 'Collections',
     component: Collections
   },
+  {
+    path: '/allevent',
+    name: 'Allevent',
+    component: Allevent
+  }
+
 
  
 ]

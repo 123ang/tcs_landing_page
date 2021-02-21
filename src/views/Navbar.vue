@@ -17,8 +17,8 @@
                     <li class="nav-item" :class="{active:collectionActive}" @click="collection_active">
                         <a class="nav-link" href="/our-collections">OUR COLLECTIONS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">EVENTS SHARING</a>
+                    <li class="nav-item" :class="{active:alleventActive}" @click="Allevent_active">
+                        <a class="nav-link" href="/allevent">EVENTS SHARING</a>
                     </li>
                     <li class="nav-item" :class="{active:contactActive}" @click="contact_active">
                         <a class="nav-link" href="/contact-us">CONTACT US</a>
@@ -71,7 +71,7 @@
                         <a class="nav-link" href="/our-collections">OUR COLLECTIONS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EVENTS SHARING</a>
+                        <a class="nav-link" href="/allevent">EVENTS SHARING</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact-us">CONTACT US</a>
@@ -125,6 +125,7 @@ export default {
             contactActive: false,
             collectionActive: false,
             aboutActive: false,
+            alleventActive:false
         };
     },
 
@@ -134,24 +135,35 @@ export default {
             this.contactActive = false
             this.collectionActive = false
             this.aboutActive = false
+            this.alleventActive=false
         },
         contact_active() {
             this.homeActive = false
             this.contactActive = true
             this.collectionActive = false
             this.aboutActive = false
+            this.alleventActive=false
         },
         collection_active() {
             this.homeActive = false
             this.contactActive = false
             this.collectionActive = true
             this.aboutActive = false
+            this.alleventActive=false
         },
         about_active() {
             this.homeActive = false
             this.contactActive = false
             this.collectionActive = false
             this.aboutActive = true
+            this.alleventActive=false
+        },
+        allevent_active(){
+            this.homeActive = false
+            this.contactActive = false
+            this.collectionActive = false
+            this.aboutActive = false
+            this.alleventActive=true
         }
     },
     created() {
@@ -167,6 +179,10 @@ export default {
         if (this.$router.currentRoute.path == "/about") {
             this.about_active()
         }
+        if (this.$router.currentRoute.path == "/allevent") {
+            this.allevent_active()
+        }
+       
         console.log(this.$router.currentRoute.path)
 
     },
