@@ -17,7 +17,7 @@
                     <li class="nav-item" :class="{active:collectionActive}" @click="collection_active">
                         <a class="nav-link" href="/our-collections">OUR COLLECTIONS</a>
                     </li>
-                    <li class="nav-item" :class="{active:alleventActive}" @click="Allevent_active">
+                    <li class="nav-item" :class="{active:alleventActive}" @click="allevent_active">
                         <a class="nav-link" href="/allevent">EVENTS SHARING</a>
                     </li>
                     <li class="nav-item" :class="{active:contactActive}" @click="contact_active">

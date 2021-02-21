@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div v-for="row in allData" :key="row">
+    <div v-for="row in allData" :key="row.id">
       {{ row.id }}
-     1
+     
     </div>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
     
       axios.post('https://ben.vmm-solution.my/php/event.php', { actions:'fetchall' }).then( response => {
         this.allData = response.data;
-        console.log(this.allData);
+        console.log(response.data);
       }).catch(function (error) {
                     console.log(error);
                 });

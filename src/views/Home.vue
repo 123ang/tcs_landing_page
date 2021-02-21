@@ -19,12 +19,12 @@
                 <tbody>
                     <tr>
                         <td>Rate</td>
-                        <td>RM 290.00</td>
-                        <td>RM 275.00</td>
-                        <td>RM 255.00</td>
-                        <td>RM 185.00</td>
-                        <td>RM 140.00</td>
-                        <td>RM 295.00</td>
+                        <td>RM {{ retail_price[1].RO }}</td>
+                        <td>RM {{ retail_price[2].RO }}</td>
+                        <td>RM {{ retail_price[3].RO }}</td>
+                        <td>RM {{ retail_price[4].RO }}</td>
+                        <td>RM {{ retail_price[5].RO }}</td>
+                        <td>RM {{ retail_price[0].RO }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -44,31 +44,27 @@
 
                 <tr>
                     <td>24K</td>
-                    <td class="phone-gold-price">RM 290.00</td>
+                    <td class="phone-gold-price">RM {{ retail_price[1].RO }}</td>
                 </tr>
                 <tr>
                     <td>22K</td>
-                    <td class="phone-gold-price">RM 279.00</td>
+                    <td class="phone-gold-price">RM {{ retail_price[2].RO }}</td>
                 </tr>
                 <tr>
                     <td>21K</td>
-                    <td class="phone-gold-price">RM 255.00</td>
+                    <td class="phone-gold-price">RM {{ retail_price[3].RO }}</td>
                 </tr>
                 <tr>
                     <td>18K</td>
-                    <td class="phone-gold-price">RM 225.00</td>
+                    <td class="phone-gold-price">RM {{ retail_price[4].RO }}</td>
                 </tr>
                 <tr>
                     <td>14K</td>
-                    <td class="phone-gold-price">RM 185.00</td>
-                </tr>
-                <tr>
-                    <td>10K</td>
-                    <td class="phone-gold-price">RM 140.00</td>
+                    <td class="phone-gold-price">RM {{ retail_price[5].RO }}</td>
                 </tr>
                 <tr>
                     <td>Premium Item</td>
-                    <td class="phone-gold-price">RM 295.00</td>
+                    <td class="phone-gold-price">RM {{ retail_price[0].RO }}</td>
                 </tr>
 
             </table>
@@ -159,7 +155,7 @@
 <script>
 import Subscrip from '@/views/Subscrip'
 import event from '@/views/event';
-
+import axios from 'axios';
 export default {
 
     name: "Home",
@@ -170,7 +166,7 @@ export default {
     },
     data() {
         return {
-
+            retail_price: "",
         }
     },
     methods: {
@@ -181,7 +177,9 @@ export default {
 
     },
     created() {
-
+        axios.get('https://unihash-ecosystem.com/tcs/get_retail_price.php').then(resp => {
+            this.retail_price = resp.data;
+        });
     }
 
 };
