@@ -8,10 +8,10 @@ $con = new PDO("mysql:host=110.4.45.178;dbname=vmmsolut_ben;","vmmsolut_admin","
 mysqli_query($con, "SET character_set_client=utf8");
 mysqli_query($con, "SET character_set_connection=utf8");
 
-$receives_data= json_decode(file_get_contents("php://input"))	
+$receives_data= json_decode(file_get_contents("php://input"));	
  
 $data = array();
-if($receives_data->action == 'fetchall'){
+if($receives_data->query == 'fetchall'){
     $query = "SELECT * FROM event";
     $statement = $con->prepare($query);
     

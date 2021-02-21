@@ -1,26 +1,27 @@
 <template>
   <div class="container">
-    qwe
+    
     <div class="panel-body">
-      <p>asdas</p>
+      
       <table class="table table-bordered">
-        <th>
-          <tr>
-            <div>123</div>
+        
+          <tr v-for="row in allData" :key="row">
+            <td>{{row.title}}</td>
+             <td>123</td>
           </tr>
-        </th>
+        
       </table>
     </div>
   </div>
 </template>
 
 <script>
-import axios from "axios";
+
+import axios from 'axios'
+
 export default {
   name: "event",
-    components: {
-      
-    },
+  components: {},
   data() {
     return {
       allData: "",
@@ -28,10 +29,10 @@ export default {
   },
   methods: {
     fetchAllData: function () {
-      axios.post("event.php", { event: "fetchall" }).then(function (response) {
-       application.allData = response.data;
+      axios.post("event.php", { actions:'fetchall' }).then(function (response) {
+        this.allData = response.data;
       });
-    },
-  },
+    }
+  }
 };
 </script>
