@@ -1,16 +1,8 @@
 <template>
   <div class="container">
-    
-    <div class="panel-body">
-      
-      <table class="table table-bordered">
-        
-          <tr v-for="row in allData" :key="row">
-            <td>{{row.title}}</td>
-             <td>123</td>
-          </tr>
-        
-      </table>
+    <div v-for="row in allData" :key="row">
+      {{ row.id }}
+     1
     </div>
   </div>
 </template>
@@ -20,19 +12,24 @@
 import axios from 'axios'
 
 export default {
-  name: "event",
-  components: {},
-  data() {
-    return {
-      allData: "",
-    };
-  },
+  
+  data:() =>({ 
+     allData:''
+    
+  }),
   methods: {
-    fetchAllData: function () {
-      axios.post("event.php", { actions:'fetchall' }).then(function (response) {
+    
+  },
+   created() {
+    
+      axios.post('https://ben.vmm-solution.my/php/event.php', { actions:'fetchall' }).then( response => {
         this.allData = response.data;
-      });
+        console.log(this.allData);
+      }).catch(function (error) {
+                    console.log(error);
+                });
     }
-  }
+   
+  
 };
 </script>
