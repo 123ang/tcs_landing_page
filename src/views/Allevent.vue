@@ -1,6 +1,7 @@
 <template>
   <div class="container">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div  v-for="row in allData" :key="row" >
       <v-container style="max-width: 1000px; ">
         <v-row wrap >
@@ -20,6 +21,11 @@
           </v-flex>
         </v-row>
       </v-container>
+=======
+    <div v-for="row in allData" :key="row.id">
+      {{ row.id }}
+     
+>>>>>>> 25da330b6fed15ffdd058f5c6e93c7123eb2dc0e
 =======
     <div v-for="row in allData" :key="row.id">
       {{ row.id }}
@@ -47,6 +53,7 @@ export default {
       .then((response) => {
         this.allData = response.data;
 <<<<<<< HEAD
+<<<<<<< HEAD
         console.log(this.allData);
       })
       .catch(function (error) {
@@ -54,6 +61,8 @@ export default {
       });
   },
 =======
+=======
+>>>>>>> 25da330b6fed15ffdd058f5c6e93c7123eb2dc0e
         console.log(response.data);
       }).catch(function (error) {
                     console.log(error);
