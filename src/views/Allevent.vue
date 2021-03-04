@@ -54,8 +54,8 @@ export default {
           featchAllData: function () {
             axios
               .post("https://ben.vmm-solution.my/php/event.php", { actions: "fetchall" })
-              .then(response => this.allData = response.data).catch(error => {
-            this.errorMessage = error.message;
+              .then(response => this.allData = response.data)
+              .catch(error => {this.errorMessage = error.message;
             console.error("There was an error!", error);
           })},
   },
