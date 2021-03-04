@@ -25,9 +25,9 @@
       </v-flex>
     </v-row>
   </table>
-=======
+
   <div class="container">
-<<<<<<< HEAD
+
     <div  v-for="row in allData" :key="row" >
       <v-container style="max-width: 1000px; ">
         <v-row wrap >
@@ -47,11 +47,10 @@
           </v-flex>
         </v-row>
       </v-container>
-=======
-    <div v-for="row in allData" :key="row.id">
+=======    <div v-for="row in allData" :key="row.id">
       {{ row.id }}
      
->>>>>>> 25da330b6fed15ffdd058f5c6e93c7123eb2dc0e
+
     </div>
   </div>
 >>>>>>> parent of 536c90b... Update Allevent.vue
