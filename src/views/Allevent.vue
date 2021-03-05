@@ -1,36 +1,47 @@
 <template>
-  <div class="w3-container" style="width: 100%">
-    <div style="height:auto;">
+  <div container class="w3-container" style="width: 100%">
+    <div style="position: relative">
       <p
+        class="hh"
         style="
           background-color: rgb(255, 214, 0);
           font-size: 42px;
           text-align: center;
           font-family: didot-w01-italic, serif;
-          
         "
       >
         events sharing
       </p>
     </div>
 
-    <table style="background-color: black">
-      <v-row wrap v-bind="index" v-for="(item, index) in listTemp" :key="index">
+    <table
+      container
+      style="background-color: black; margin-top: -20px; height: 100%; width: 100%"
+    >
+      <v-row container wrap v-bind="index" v-for="(item, index) in listTemp" :key="index">
         <v-flex xs12 sm4 md4 p-4 v-for="(cell, i) in item" :key="i">
-          <v-card elevation="9">
-            <v-img contain v-bind:src="cell.PathPic"> </v-img>
-            <div>
-              <span
-                ><b>{{ cell.author }}</b></span
-              >
+          <v-card container style="height: 100%; ">
+            <div container style="height: auto;">
+              <v-img
+                container
+                style="width: 100%; height: 100%; object-fit: cover"
+                v-bind:src="cell.PathPic"
+              />
             </div>
-            <a onclick="func">{{ cell.title }}</a>
+            <div container style="margin-top:auto;">
+                <b >{{ cell.author }}</b>
+                <br />
+                <a style="text-decoration: none" href="default.asp">
+                  <p class="kk hh">{{ cell.title }}</p></a
+                >
+              </div>
           </v-card>
         </v-flex>
       </v-row>
     </table>
   </div>
 </template>
+
 <script>
 import axios from "axios";
 export default {
@@ -75,3 +86,14 @@ export default {
   },
 };
 </script>
+
+<style>
+.kk:hover {
+  color: orange;
+  text-decoration: none;
+}
+.hh {
+  color: black;
+  font-size: 28px;
+}
+</style>
