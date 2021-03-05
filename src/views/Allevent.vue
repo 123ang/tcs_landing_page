@@ -13,14 +13,10 @@
         events sharing
       </p>
     </div>
-
-    <table
-      container
-      style="background-color: black; margin-top: -20px; height: 100%; width: 100%"
-    >
+<v-container style="max-width:100%;background-color:black;margin-top: -20px;">
       <v-row container wrap v-bind="index" v-for="(item, index) in listTemp" :key="index">
         <v-flex xs12 sm4 md4 p-4 v-for="(cell, i) in item" :key="i">
-          <v-card container style="height: 100%">
+          <v-card  style="height: 100%;width:100%;" >
             <div container style="height: auto">
               <v-img
                 container
@@ -45,7 +41,8 @@
           </v-card>
         </v-flex>
       </v-row>
-    </table>
+    
+</v-container>
   </div>
 </template>
 
