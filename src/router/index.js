@@ -5,6 +5,7 @@ import About from '../views/About.vue'
 import ContactUs from '../views/ContactUs.vue'
 import Collections from '../views/Collections.vue'
 import Allevent from '../views/Allevent.vue'
+import Eventconten from '../views/Eventconten'
 Vue.use(VueRouter)
 
   const routes = [
@@ -32,6 +33,11 @@ Vue.use(VueRouter)
     path: '/allevent',
     name: 'Allevent',
     component: Allevent
+  },
+  {
+    path:'/eventconten',
+    name:'Eventconten',
+    component:Eventconten
   }
 
 

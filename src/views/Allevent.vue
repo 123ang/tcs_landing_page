@@ -20,21 +20,28 @@
     >
       <v-row container wrap v-bind="index" v-for="(item, index) in listTemp" :key="index">
         <v-flex xs12 sm4 md4 p-4 v-for="(cell, i) in item" :key="i">
-          <v-card container style="height: 100%; ">
-            <div container style="height: auto;">
+          <v-card container style="height: 100%">
+            <div container style="height: auto">
               <v-img
                 container
                 style="width: 100%; height: 100%; object-fit: cover"
                 v-bind:src="cell.PathPic"
               />
             </div>
-            <div container style="margin-top:auto;">
-                <b >{{ cell.author }}</b>
-                <br />
-                <a style="text-decoration: none" href="default.asp">
-                  <p class="kk hh">{{ cell.title }}</p></a
-                >
-              </div>
+            <div container style="margin-bottom: 0%">
+              <b>{{ cell.author }}</b>
+              <br />
+              <router-link
+                class="kk"
+                style="text-decoration: none"
+                :to="{
+                  path: '/eventconten',
+                  query: { arry: cell },
+                }"
+              >
+                {{ cell.title }}</router-link
+              >
+            </div>
           </v-card>
         </v-flex>
       </v-row>
@@ -91,9 +98,5 @@ export default {
 .kk:hover {
   color: orange;
   text-decoration: none;
-}
-.hh {
-  color: black;
-  font-size: 28px;
 }
 </style>
